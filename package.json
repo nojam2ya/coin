@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.40.1",
@@ -43,5 +45,5 @@
     "vite": "^5.2.0",
     "vite-tsconfig-paths": "^4.3.2"
   },
-  "homepage": "https://nojam2ya.github.io/"
+  "homepage": "https://nojam2ya.github.io/coin"
 }
