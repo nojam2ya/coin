@@ -4,12 +4,15 @@ import { useOutletContext } from 'react-router-dom';
 import TickerCon from '@src/routes/Coin/Tickers/TickerCon';
 
 const Tickers = () => {
-  const { tickers } = useOutletContext<{
+  const { tickers, tickersLoading } = useOutletContext<{
     coin: ICoinInfo;
     tickers: ITickers;
+    tickersLoading: boolean;
   }>();
 
-  return (
+  return tickersLoading || !tickers ? (
+    <div>Loading...</div>
+  ) : (
     <>
       <WrapList>
         <li>

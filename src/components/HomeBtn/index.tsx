@@ -4,7 +4,7 @@ import { Wrap } from './style';
 const HomeBtn = () => {
   return (
     <Wrap type="button">
-      <Link to="/">&larr;</Link>
+      <Link to={`${import.meta.env.VITE_PUBLIC_URL}/`}>&larr;</Link>
     </Wrap>
   );
 };

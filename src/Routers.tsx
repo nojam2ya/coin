@@ -8,8 +8,14 @@ const Routers = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Coins />} />
-        <Route path="/:coinId" element={<Coin />}>
+        <Route
+          path={`${import.meta.env.VITE_PUBLIC_URL}/`}
+          element={<Coins />}
+        />
+        <Route
+          path={`${import.meta.env.VITE_PUBLIC_URL}/:coinId`}
+          element={<Coin />}
+        >
           <Route index element={<Navigate to="tickers" replace={true} />} />
           <Route path="tickers" element={<Tickers />} />
           <Route path="chart" element={<Chart />} />

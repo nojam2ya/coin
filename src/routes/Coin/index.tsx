@@ -84,7 +84,7 @@ const Coin = () => {
               </li>
             </TabMenu>
             <div className="content">
-              <Outlet context={{ coinId, coin, tickers }} />
+              <Outlet context={{ coinId, coin, tickers, tickersLoading }} />
             </div>
           </BoxTab>
         </Wrap>
