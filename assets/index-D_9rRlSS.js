@@ -275,7 +275,7 @@ Error generating stack: `+d.message+`
   top: 50%;
   left: 24px;
   transform: translateY(-50%);
-`,CM=()=>ue.jsx(kM,{type:"button",children:ue.jsx(ng,{to:"/",children:"←"})}),AM=cn.div`
+`,CM=()=>ue.jsx(kM,{type:"button",children:ue.jsx(ng,{to:"https://nojam2ya.github.io/coin/",children:"←"})}),AM=cn.div`
   width: 100%;
   height: calc(100vh);
   display: inline-flex;
